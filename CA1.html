@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* Modern CSS Reset */
+       .footer-section ul,.nav-links,ol,ul{list-style:none}.nav-links a,a{text-decoration:none}.card,.footer-bottom,.hero{text-align:center}*,::after,::before{box-sizing:border-box;margin:0;padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}html{scroll-behavior:smooth}body{text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}canvas,img,picture,svg,video{display:block;max-width:100%}.logo,.nav-links,.navbar,body{display:flex}button,input,select,textarea{font:inherit}.card p,.hero p{line-height:1.6}@media (prefers-reduced-motion:reduce){*,::after,::before{animation-duration:0s!important;animation-iteration-count:1!important;transition-duration:0s!important;scroll-behavior:auto!important}}table{border-collapse:collapse;border-spacing:0}fieldset,legend{padding:0;margin:0;border:0}button{border:none;background:0 0;cursor:pointer}.card img,body{background-color:#f8f9fa}:focus{outline:#007bff solid 2px;outline-offset:2px}a{color:inherit}em,strong{font-weight:600}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}body{font-family:Poppins,sans-serif;color:#333;min-height:100vh;flex-direction:column}.navbar{justify-content:space-between;align-items:center;background:linear-gradient(135deg,#007bff,#0056b3);color:#fff;padding:15px 20px;position:sticky;top:0;width:100%;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,.1)}.hero,.hero-content,.nav-links li{position:relative}.logo{align-items:center}.logo img{height:60px;width:auto;margin-right:15px;transition:transform .3s}.card:hover img,.logo img:hover{transform:scale(1.05)}.nav-links{gap:20px}.nav-links a{color:#fff;font-size:1.1em;font-weight:500;padding:8px 15px;border-radius:4px;transition:.3s}.card,.card img{transition:transform .3s ease-in-out}.nav-links a.active,.nav-links a:hover{color:#fc0;background-color:rgba(255,255,255,.1)}.menu-toggle{display:none;background:0 0;border:none;font-size:1.8em;color:#fff;cursor:pointer;padding:5px}.hero{display:flex;flex-wrap:wrap;padding:80px 20px;min-height:500px;background:url('https://stgaccinwbsdevlrs01.blob.core.windows.net/newcorporatewbsite/homepage-banners/January2024/CCeVjCKszDYpK1Zw5MPj.webp?w=3840&q=75') center center/cover no-repeat;color:#fff}.card,.content-section{background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.1);border-radius:10px}.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.hero-content{z-index:1;max-width:800px;margin:0 auto}.hero h1{font-size:3.5em;margin-bottom:20px;font-weight:700;text-shadow:2px 2px 4px rgba(0,0,0,.3)}.hero p{font-size:1.2em;margin-bottom:30px}.content-section{padding:50px 20px;margin:20px}.content-section h2{color:#333;font-size:2.5em;margin-bottom:30px;text-align:center;position:relative;padding-bottom:15px}.content-section h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100px;height:3px;background:linear-gradient(90deg,#007bff,#0056b3)}.card-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;padding:20px}.card{padding:20px;overflow:hidden;height:100%;display:flex;flex-direction:column}.card:hover{transform:translateY(-10px)}.card img{width:100%;height:auto;max-height:250px;object-fit:contain;border-radius:10px;margin-bottom:15px;padding:10px}.card img.loaded{opacity:1}.card img.lazy-load{filter:blur(10px);transform:scale(1.1)}.card h3{color:#333;font-size:1.5em;margin:15px 0}.card p{color:#666}.footer{background:linear-gradient(135deg,#007bff,#0056b3);color:#fff;padding:50px 20px 20px;margin-top:auto}.footer-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1200px;margin:0 auto}.footer-section{padding:20px}.footer-section h3{font-size:1.5em;margin-bottom:20px;color:#fc0}.footer-section p,.footer-section ul{font-size:1.1em;line-height:1.6;margin-bottom:10px}.footer-section ul li{margin-bottom:10px}.footer-section ul li a{color:#fff;text-decoration:none;transition:color .3s}.footer-section ul li a:hover{color:#fc0}.footer-bottom{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}.back-to-top{display:none;position:fixed;bottom:20px;right:20px;background:#007bff;color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.3s;box-shadow:0 2px 5px rgba(0,0,0,.2)}.back-to-top:hover{background:#0056b3;transform:translateY(-3px)}@media (max-width:768px){.nav-links{display:none;position:fixed;top:90px;left:0;right:0;background:#007bff;flex-direction:column;padding:20px;box-shadow:0 2px 5px rgba(0,0,0,.1)}.menu-toggle,.nav-links a{display:block}.nav-links.active{display:flex}.nav-links li{margin:10px 0}.nav-links a{padding:10px}.logo img{height:50px}.hero h1{font-size:2.5em}.hero p{font-size:1em}.content-section{padding:30px 15px}.content-section h2{font-size:2em}.card-container{grid-template-columns:1fr;gap:20px}}@media (max-width:600px){.navbar{padding:10px}.logo img{height:40px}.hero{padding:40px 15px}.hero h1{font-size:2em}.content-section{margin:10px;padding:20px 10px}.content-section h2{font-size:1.8em}.card{padding:15px}.card img{height:150px}.footer-container{grid-template-columns:1fr;text-align:center}}@media (max-width:576px){.navbar{padding:10px}.logo img{height:40px}.hero{padding:40px 15px;min-height:400px}.hero h1{font-size:2em}.hero p{font-size:1em}.content-section{margin:10px;padding:20px 10px}.card,.footer-section{padding:15px}.content-section h2{font-size:1.8em}.card{margin:10px 0}.card img{height:150px}.card h3,.footer-section h3{font-size:1.3em}.btn,.card p,.footer-section p,.footer-section ul{font-size:.9em}.footer-container{grid-template-columns:1fr;text-align:center;gap:20px}.carousel-item img{height:200px;object-fit:cover}.card-container{grid-template-columns:1fr;gap:15px}.modal-dialog{margin:5px}.btn{width:100%;margin:5px 0;padding:8px 15px}.nav-links{top:70px}.nav-links a{font-size:1em;padding:12px}}@media (min-width:577px) and (max-width:768px){.card-container,.footer-container{grid-template-columns:repeat(2,1fr)}.navbar{padding:15px}.logo img{height:50px}.hero{padding:60px 20px;min-height:450px}.hero h1{font-size:2.5em}.hero p{font-size:1.1em}.content-section{margin:15px;padding:30px 15px}.card,.modal-dialog{margin:10px}.card,.footer-section{padding:20px}.content-section h2{font-size:2em}.card img{height:180px}.card h3,.footer-section h3{font-size:1.4em}.btn,.card p,.footer-section p,.footer-section ul{font-size:1em}.footer-container{gap:25px}.carousel-item img{height:300px;object-fit:cover}.card-container{gap:20px}.btn{padding:10px 20px}.nav-links{top:80px}.nav-links a{font-size:1.1em;padding:10px 15px}}@media (max-height:576px) and (orientation:landscape){.hero{min-height:300px;padding:30px 15px}.hero h1{font-size:1.8em}.hero p{font-size:.9em}.nav-links{max-height:80vh;overflow-y:auto}.modal-dialog{margin:5px;max-height:90vh}}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.card img,.carousel-item img,.logo img{image-rendering:-webkit-optimize-contrast}}.doctor-img{width:100%;height:auto;max-height:300px;object-fit:contain;border-radius:10px;margin-bottom:15px;transition:transform .3s ease-in-out;background-color:#f8f9fa;padding:10px}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="logo.webp" loading="eager" alt="Hospital Logo"></div>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="book-appointment.html">Book Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://stgaccinwbsdevlrs01.blob.core.windows.net/newcorporatewbsite/homepage-banners/January2024/CCeVjCKszDYpK1Zw5MPj.webp?w=3840&q=75" class="d-block w-100" loading="eager" alt="Hospital Banner">
+          </div>
+          <div class="carousel-item">
+            <img src="https://stgaccinwbsdevlrs01.blob.core.windows.net/newcorporatewbsite/homepage-banners/January2024/CCeVjCKszDYpK1Zw5MPj.webp?w=3840&q=75" class="d-block w-100" loading="lazy" alt="Hospital Banner">
+          </div>
+          <div class="carousel-item">
+            <img src="https://stgaccinwbsdevlrs01.blob.core.windows.net/newcorporatewbsite/homepage-banners/January2024/CCeVjCKszDYpK1Zw5MPj.webp?w=3840&q=75" class="d-block w-100" loading="lazy" alt="Hospital Banner">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<section id="services" class="content-section">
+    <h2>Our Healthcare Services</h2>
+    <p>Providing top-quality healthcare services round the clock for you and your loved ones.</p>
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="https://www.babycenter.com/ims/2019/11/babycenter-girl-pregnant-mom-14.jpg" loading="lazy" alt="Maternity Home" class="lazy-load">
+            <h3>Maternity Home</h3>
+            <p>Comprehensive maternity care for a safe and comfortable childbirth experience.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.freepik.com/premium-vector/24x7-service-logo-design-everyday-vector-file_389740-725.jpg" loading="lazy" alt="24x7 Available" class="lazy-load">
+            <h3>24x7 Availability</h3>
+            <p>Round-the-clock medical support and emergency care for patients.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/029/338/731/original/ambulance-car-illustration-emergency-medical-service-vehicle-isolated-on-white-background-vector.jpg" loading="lazy" alt="Ambulance Facilities" class="lazy-load">
+            <h3>Ambulance Services</h3>
+            <p>Emergency ambulance service ensuring rapid medical response.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.britannica.com/23/149323-050-15CE7A11/intensive-care-unit.jpg" loading="lazy" alt="ICU" class="lazy-load">
+            <h3>Intensive Care Unit (ICU)</h3>
+            <p>State-of-the-art ICU facilities for critical and intensive medical care.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.j7-4qdHwYyed32DGdXEdnAAAAA?rs=1&pid=ImgDetMain" loading="lazy" alt="Pharmacy Support" class="lazy-load">
+            <h3>Pharmacy Support</h3>
+            <p>24/7 pharmacy services with quality medicines and expert consultation.</p>
+        </div>
+    </div>
+</section>
+
+
+        
+    <section id="specialties" class="content-section">
+        <h2>Doctors</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Cardiology" class="lazy-load">
+                <h3>Cardiology</h3>
+                <p>Expert care for heart-related conditions and treatments.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Neurology" class="lazy-load">
+                <h3>Neurology</h3>
+                <p>Advanced treatments for neurological disorders.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Orthopedics" class="lazy-load">
+                <h3>Orthopedics</h3>
+                <p>Comprehensive bone and joint care.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Pediatrics" class="lazy-load">
+                <h3>Pediatrics</h3>
+                <p>Compassionate care for infants, children, and adolescents.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Oncology" class="lazy-load">
+                <h3>Oncology</h3>
+                <p>Cutting-edge cancer diagnosis and treatments.</p>
+            </div>
+           
+        </div>
+    </section>
+    <section id="doctors" class="content-section" >
+        <h2>book Appointment</h2>
+        <div class="card-container"  id="bookappointment">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Doctor" class="doctor-img lazy-load">
+                <h3>Dr. Arvind Sharma</h3>
+                <p>Cardiologist</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-doctor="Dr. Arvind Sharma" data-specialty="Cardiologist">Book Appointment</button>      
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Doctor" class="doctor-img lazy-load">
+                <h3>Dr. Rajesh Verma</h3>
+                <p>Neurologist</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-doctor="Dr. Rajesh Verma" data-specialty="Neurologist">Book Appointment</button>      
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Doctor" class="doctor-img lazy-load">
+                <h3>Dr. Vikram Malhotra</h3>
+                <p>Dermatologist</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-doctor="Dr. Vikram Malhotra" data-specialty="Dermatologist">Book Appointment</button>      
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Doctor" class="doctor-img lazy-load">
+                <h3>Dr. Manshi Agarwal</h3>
+                <p>Orthologist</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-doctor="Dr. Manshi Agarwal" data-specialty="Orthologist">Book Appointment</button>        
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" loading="lazy" alt="Doctor" class="doctor-img lazy-load">
+                <h3>Dr. Rohit Bansal</h3>
+                <p>Neurologist</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-doctor="Dr. Rohit Bansal" data-specialty="Neurologist">Book Appointment</button>        
+            </div>
+            
+        </div>
+    </section>
+    <section id="specialties" class="content-section">
+        <h2>Why Choose Health-O-Care</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.XkLo3JyE8arayrhJW1I09AHaE7?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" loading="lazy" alt="Patient-Centered Approach" style="width: 100%; height: auto; max-height: 250px; object-fit: contain; background-color: #f8f9fa; padding: 10px;">
+                <h3>Patient-Centered Approach</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corrupti?</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.VhFt1ah-D9rvqj_eczatNwHaEc?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" loading="lazy" alt="Community Engagement" style="width: 100%; height: auto; max-height: 250px; object-fit: contain; background-color: #f8f9fa; padding: 10px;">
+                <h3>Community Engagement</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis libero aperiam</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP._r8h9o5JqvFNTZuRb0VTJgHaE8?rs=1&pid=ImgDetMain" loading="lazy" alt="Patient-centered Approach" style="width: 100%; height: auto; max-height: 250px; object-fit: contain; background-color: #f8f9fa; padding: 10px;">
+                <h3>Patient-centered Approach</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis libero aperiam</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP._r8h9o5JqvFNTZuRb0VTJgHaE8?rs=1&pid=ImgDetMain" loading="lazy" alt="Focus On Wellness" style="width: 100%; height: auto; max-height: 250px; object-fit: contain; background-color: #f8f9fa; padding: 10px;">
+                <h3>Focus On Wellness</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis libero aperiam</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.VhFt1ah-D9rvqj_eczatNwHaEc?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" loading="lazy" alt="Comprehensive Care" style="width: 100%; height: auto; max-height: 250px; object-fit: contain; background-color: #f8f9fa; padding: 10px;">
+                <h3>Comprehensive Care</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, necessitatibus?</p>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="CA1.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Health Street, City, Country</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> contact@hospitalcare.com</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hospital Care | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <button class="back-to-top">↑</button>
+
+    <!-- Appointment Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Book Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label for="doctorName" class="form-label">Doctor</label>
+                            <input type="text" class="form-control" id="doctorName" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialty" class="form-label">Specialty</label>
+                            <input type="text" class="form-control" id="specialty" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="patientName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="patientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentDate" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentTime" class="form-label">Preferred Time</label>
+                            <input type="time" class="form-control" id="appointmentTime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitAppointment">Submit Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    });
+
+    // Lazy loading implementation
+    document.addEventListener("DOMContentLoaded", function() {
+        const lazyImages = document.querySelectorAll("img.lazy-load");
+        
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.remove("lazy-load");
+                    img.classList.add("loaded");
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+    });
+
+    // Appointment Modal Script
+    document.addEventListener('DOMContentLoaded', function() {
+        const appointmentModal = document.getElementById('appointmentModal');
+        const doctorNameInput = document.getElementById('doctorName');
+        const specialtyInput = document.getElementById('specialty');
+        const submitButton = document.getElementById('submitAppointment');
+
+        // Update modal content when appointment button is clicked
+        document.querySelectorAll('[data-bs-toggle="modal"]').forEach(button => {
+            button.addEventListener('click', function() {
+                const doctor = this.getAttribute('data-doctor');
+                const specialty = this.getAttribute('data-specialty');
+                doctorNameInput.value = doctor;
+                specialtyInput.value = specialty;
+            });
+        });
+
+        // Handle form submission
+        submitButton.addEventListener('click', function() {
+            const form = document.getElementById('appointmentForm');
+            if (form.checkValidity()) {
+                // Here you would typically send the data to your backend
+                const formData = {
+                    doctor: doctorNameInput.value,
+                    specialty: specialtyInput.value,
+                    patientName: document.getElementById('patientName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    date: document.getElementById('appointmentDate').value,
+                    time: document.getElementById('appointmentTime').value,
+                    message: document.getElementById('message').value
+                };
+
+                // For demo purposes, we'll just show an alert
+                alert('Appointment request submitted successfully!');
+                
+                // Close the modal
+                const modal = bootstrap.Modal.getInstance(appointmentModal);
+                modal.hide();
+                
+                // Reset the form
+                form.reset();
+            } else {
+                form.reportValidity();
+            }
+        });
+    });
+</script>
+  
+</body>
+</html>
